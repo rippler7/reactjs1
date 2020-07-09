@@ -66,7 +66,7 @@ div.excerptContainer .card-title{
   color:auto;
 }
 
-div.excerptContainer .card-title:hover{
+div.excerptContainer:hover .card-title{
   color:#e7ba2f;
 }
 
