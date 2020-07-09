@@ -1,0 +1,25 @@
+.carouselMain div ol.carousel-indicators li{        
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: none !important;
+    border-bottom: none !important;
+    opacity: .8;
+    transition: opacity .6s ease;
+}
+.carouselMain div ol.carousel-indicators li.active{
+    opacity: 1;
+    background-color:#e7ba2f;
+}
+
+.h1,h2,h3,h4,h5{
+    font-weight:bolder;
+}

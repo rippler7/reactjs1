@@ -1,8 +1,6 @@
 body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,186 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.mainFooter a, a:link, a:active {
+  color:#fff !important;
+  text-decoration:none;
+}
+
+.container-fluid{
+  height:min-content;
+}
+
+.logoHeader{
+  width:466px;
+  text-align: center;
+  margin:0px auto;
+  cursor: pointer;
+}
+
+.contentDiv{
+  width:1080px;
+  margin:0px auto;
+  position:relative;
+}
+
+.card{
+  border:none !important;
+}
+
+.cardGrp{
+  cursor:pointer;
+}
+
+.card-title h5 {
+  font-size: 1.1em;
+  font-weight:900;
+}
+
+.cardGrp > img{
+  width:256px;
+  height:116px;
+}
+
+.cardGrp div.dateText{
+  color:#585858;
+  font-size:.8em;
+  padding-bottom: .2em;
+}
+
+div.excerptContainer{
+  widows: 544px;
+  clear:right;
+}
+
+div.excerptContainer .card-title{
+  font-weight:bold;
+  font-size:1.1em;
+  color:auto;
+}
+
+div.excerptContainer .card-title:hover{
+  color:#e7ba2f;
+}
+
+div.excerptContainer .cardText{
+  font-size:12px;
+}
+
+.sidebarRight{
+  text-align:center;
+  width:100%;
+  display:inline-block;
+  background-color:#efefef;
+  margin-top: 1.25rem;
+}
+
+.sidebarRight div.banner1{
+  margin:1.25rem auto;
+  width:100%;
+  cursor:pointer;
+}
+
+.recommendTitle{
+  font-size:1.5em;
+  font-weight:500;
+}
+
+.sidebarRight hr{
+  height:.9px !important;
+  background-color:#000;
+  border-radius: 1px;
+  width:85%;
+  margin-top:0px;
+}
+
+.sbGrp{
+  text-align:center;
+  width:90%;
+  margin:10px auto;
+  cursor:pointer;
+}
+
+.sbBody {
+  text-align:left;
+  font-weight:bold;
+}
+
+
+.sbTitle{
+  font-size:.5em;
+  text-align:left;
+}
+
+.sbTitle:hover{
+  color:#e7ba2f;
+}
+
+.sbDateText{
+  font-size:.45em;
+  text-align:left;
+  color:#999;
+  font-weight:normal;
+}
+
+.banner2{
+  width:300px;
+  height:93px;
+  margin:0px auto;
+  cursor:pointer;
+  opacity:1;
+}
+
+.banner2:hover{
+  opacity:.8;
+}
+
+.mainFooter{
+  height:45px;
+  padding: 10px auto;
+  width:100%;
+  color:#fff;
+  background-color: #000;
+}
+
+.bottomText{
+  height:45px;
+  width:300px;
+  vertical-align: middle;
+  padding-top:10px;
+}
+.bottomLeft{
+  text-indent:20px;
+  text-align:left;
+}
+.bottomRight{
+  text-align:right;
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 24px;
+  bottom: 60px;
+  right:15%;
+  align-items:center;
+  height: 14px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 1;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

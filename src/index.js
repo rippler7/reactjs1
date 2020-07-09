@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Header from './components/header';
+import ScrollArrow from './components/scrollArrow';
+import CarouselSlide from './components/carousel';
+import NewsFeed from './components/item-list';
+import Sidebar from './components/sidebar';
+import Footer from './components/footer';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <div className="wrapperDiv" id="top">
+      <Header />
+      <CarouselSlide />
+        <div className="contentDiv">
+          <div className="row">
+            <div className="col-md-8">
+              <NewsFeed/>
+            </div>
+            <div className="col-md-4">
+              <Sidebar/>
+            </div>
+           <ScrollArrow/>
+          </div>
+        </div>
+        <Footer />
+    </div>
+  )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App/>,document.querySelector('#container'));
