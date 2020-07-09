@@ -19,7 +19,7 @@ const ScrollArrow = () =>{
     window.addEventListener('scroll', checkScrollTop)
   
     return (
-          <img src={process.env.PUBLIC_URL + '/assets/scrollUpArrow.png'} className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'block' : 'none'}}/>
+          <img src={process.env.PUBLIC_URL + '/assets/scrollUpArrow.png'} className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'block' : 'none'}} alt=""/>
     );
   }
   

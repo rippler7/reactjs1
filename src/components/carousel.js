@@ -7,8 +7,8 @@ class CarouselSlide extends Component {
     render(){    
         return(
             <div className='container-fluid carouselMain' style={{"paddingLeft":0,"paddingRight":0}}>  
-                <Carousel interval={2000} keyboard={false} pauseonhover="true">  
-                    <Carousel.Item style={{'height':"418px"}}  >  
+                <Carousel wait={0} keyboard={false} pauseonhover="true" interval={null}>  
+                    <Carousel.Item style={{'height':"418px"}}  autoPlay={false}>  
                         <img 
                         style={{"marginTop":"-10%","height:":"418px","width":"auto"}}
                         alt=""  
@@ -21,7 +21,7 @@ class CarouselSlide extends Component {
 サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p> 
                         </Carousel.Caption>  
                     </Carousel.Item  >  
-                    <Carousel.Item style={{'height':"418px"}}>  
+                    <Carousel.Item style={{'height':"418px"}} autoPlay={false}>  
                         <img  
                         style={{"marginTop":"-10%","height:":"418px","width":"auto"}}
                         alt=""
@@ -32,7 +32,7 @@ class CarouselSlide extends Component {
                             <p>Subtitle here</p>  
                         </Carousel.Caption>  
                     </Carousel.Item>  
-                    <Carousel.Item style={{'height':"418px"}}>  
+                    <Carousel.Item style={{'height':"418px"}} autoPlay={false}>  
                         <img  
                         style={{"marginTop":"-10%","height:":"418px","width":"auto"}}
                         alt=""
