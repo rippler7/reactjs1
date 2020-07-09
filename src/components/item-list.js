@@ -4,7 +4,7 @@ import newsfeed from "../newsfeed.json";
 
 class NewsFeedItems extends Component{
     clickTo = (event) => {
-        window.open(newsfeed[event.currentTarget.getAttribute("data")].linkTo);
+        window.open(newsfeed[event.currentTarget.getAttribute("data")-1].linkTo);
     }
     moreClick = (event) => {
         window.open(process.env.PUBLIC_URL + "index.html");

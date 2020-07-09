@@ -3,7 +3,7 @@ import newsfeed from "../newsfeed.json";
 
 class SidebarFeed extends Component{
     sbClickTo = (event) => {
-        window.open(newsfeed[event.currentTarget.getAttribute("data")].linkTo);
+        window.open(newsfeed[event.currentTarget.getAttribute("data")-1].linkTo);
     }
     render(){
         return(
